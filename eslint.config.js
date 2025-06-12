@@ -1,7 +1,7 @@
 import js from '@eslint/js'
-import globals from 'globals'
 import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
+import globals from 'globals'
 
 export default [
   { ignores: ['dist'] },
@@ -28,6 +28,8 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
+      'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': ['error', { 'varsIgnorePattern': '^_', "argsIgnorePattern": "^_" }],
     },
   },
 ]
