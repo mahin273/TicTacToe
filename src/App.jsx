@@ -1,14 +1,11 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import './App.css'
-import Game from './components/Board'
+import Game from "./components/Board";
 
 function App() {
-
   return (
-    <Game />
-  )
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-sky-200 via-indigo-200 to-fuchsia-200">
+      <Game />
+    </div>
+  );
 }
 
-export default App
+export default App;
